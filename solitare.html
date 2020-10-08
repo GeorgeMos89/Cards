@@ -26,12 +26,25 @@
             height: 150px;
             border-radius: 5px;
             border: solid black 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        #Ace {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .Ace {
+            width: 50px;
+            height: 50px;
+        }
+
+        .Ace2 {
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .letter {
+            width:100%;
+            height:fit-content;
         }
 
         #item2 {
@@ -41,6 +54,11 @@
             height: 150px;
             border-radius: 5px;
             border: solid black 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
         }
 
         #item3 {
@@ -50,6 +68,11 @@
             height: 150px;
             border-radius: 5px;
             border: solid black 2px;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items:center;
         }
 
         #item4 {
@@ -60,31 +83,63 @@
             border-radius: 5px;
             border: solid black 2px;
         }
+
+        .rows {
+            width: 100%;
+            height:fit-content;
+            background-color: white;
+        }
+
+        #row1 {
+            display: flex;
+            justify-content: left;
+        }
+
+        #row2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #row3 {
+            display: flex;
+            justify-content: right;
+        }
+
     </style>
 </head>
 
 <body>
     <div>
-        <div id="item1">A
-                <img src="hearts.png" alt="Hearts logo" id="Ace">
+
+        <div id="item1">
+            <p class="letter">A</p>
+            <img src="hearts.png" alt="Hearts logo" class="Ace">
         </div>
 
-        <p id="item2">2
-            <img src="hearts.png" alt="Hearts logo." width="50px">
-            <img src="hearts.png" alt="Hearts logo." width="50px">
-        </p>
+        <div id="item2">
+            <p class="letter">2</p>
+            <img src="hearts.png" alt="Hearts logo" class="Ace">
+            <img src="hearts.png" alt="Hearts logo" class="Ace">
+        </div>
 
-        <p id="item3">3
-            <img src="hearts.png" alt="Hearts logo." width="50px">
-            <img src="hearts.png" alt="Hearts logo." width="50px">
-            <img src="hearts.png" alt="Hearts logo." width="50px">
-        </p>
+        <div id="item3">
+            <p class="letter">3</p>
+            <div id="row1" class="rows">
+                <img src="hearts.png" alt="Hearts logo" class="Ace2">
+            </div>
+            <div id="row2" class="rows">
+                <img src="hearts.png" alt="Hearts logo" class="Ace2">
+            </div>
+            <div id="row3" class="rows">
+                <img src="hearts.png" alt="Hearts logo" class="Ace2">
+            </div>
+        </div>
 
         <p id="item4">4
-            <img src="hearts.png" alt="Hearts logo." width="50px">
-            <img src="hearts.png" alt="Hearts logo." width="50px">
-            <img src="hearts.png" alt="Hearts logo." width="50px">
-            <img src="hearts.png" alt="Hearts logo." width="50px">
+            <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            <img src="hearts.png" alt="Hearts logo." class="Ace2">
         </p>
 
 
