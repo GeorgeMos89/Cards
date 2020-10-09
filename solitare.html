@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solitare</title>
     <style>
-        div {
-            background-color: green;
+        body {
             width: 1000px;
-            height: 3000px;
+            height: 1000px;
+            background-color: green;
+        }
+        nav {
+
             display: flex;
             justify-content: space-between;
+            margin: 50px;
         }
 
         p {
@@ -26,9 +30,7 @@
             height: 150px;
             border-radius: 5px;
             border: solid black 2px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
         }
 
         .Ace {
@@ -44,7 +46,7 @@
 
         .letter {
             width:100%;
-            height:fit-content;
+    
         }
 
         #item2 {
@@ -54,11 +56,7 @@
             height: 150px;
             border-radius: 5px;
             border: solid black 2px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
+
         }
 
         #item3 {
@@ -68,11 +66,7 @@
             height: 150px;
             border-radius: 5px;
             border: solid black 2px;
-            position: relative;
-            display: flex;
-            justify-content: space-around;
             flex-direction: column;
-            align-items:center;
         }
 
         #item4 {
@@ -82,17 +76,35 @@
             height: 150px;
             border-radius: 5px;
             border: solid black 2px;
+
+            
         }
+        #item5 {
+            padding: 5px;
+            background-color: white;
+            width: 100px;
+            height: 150px;
+            border-radius: 5px;
+            border: solid black 2px;
+
+            
+        }
+        #item6 {
+            padding: 5px;
+            background-color: white;
+            width: 100px;
+            height: 150px;
+            border-radius: 5px;
+            border: solid black 2px;
+
+            
+        }
+
 
         .rows {
             width: 100%;
-            height:fit-content;
+            
             background-color: white;
-        }
-
-        #row1 {
-            display: flex;
-            justify-content: left;
         }
 
         #row2 {
@@ -102,25 +114,107 @@
 
         #row3 {
             display: flex;
-            justify-content: right;
+            justify-content: flex-end;
+        }
+        #thefourth {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 10px;
+        }
+        #thefourth2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 10px;
+        }
+        #thefifth {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            padding: 5px;
+        }
+        #thefifth2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            padding: 5px;
         }
 
+        #thefifthmid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            padding: 5px;
+
+        }
+        #thesixth {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            padding: 5px;
+        }
+        #thesixth2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            padding: 5px;
+        }
+        #thesixth3 {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #thesecond {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+
+
+        }
+        #thesecond2 {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+
+
+        }
+        #thefirst {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 35px;
+        }
+
+.second-sec {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
 
     </style>
 </head>
 
 <body>
-    <div>
+    <nav>
 
         <div id="item1">
             <p class="letter">A</p>
-            <img src="hearts.png" alt="Hearts logo" class="Ace">
+            <div id="thefirst">
+            <img src="hearts.png" alt="Hearts logo" class="Ace2">
+        </div>
         </div>
 
         <div id="item2">
             <p class="letter">2</p>
-            <img src="hearts.png" alt="Hearts logo" class="Ace">
-            <img src="hearts.png" alt="Hearts logo" class="Ace">
+            <div id="thesecond">
+            <img src="hearts.png" alt="Hearts logo" class="Ace2">
+            
+        </div>
+        <div id="thesecond2"><img src="hearts.png" alt="Hearts logo" class="Ace2"></div>
         </div>
 
         <div id="item3">
@@ -135,16 +229,51 @@
                 <img src="hearts.png" alt="Hearts logo" class="Ace2">
             </div>
         </div>
+        
+        
 
-        <p id="item4">4
-            <img src="hearts.png" alt="Hearts logo." class="Ace2">
-            <img src="hearts.png" alt="Hearts logo." class="Ace2">
-            <img src="hearts.png" alt="Hearts logo." class="Ace2">
-            <img src="hearts.png" alt="Hearts logo." class="Ace2">
-        </p>
+    </nav>
+    <section class="second-sec">
+        <div id="item4">
+            <p class="letter">4</p><div id="thefourth">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            </div>
+            <div id="thefourth2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            </div>
+        </div>
+        <div id="item5">
+            <p class="letter">5</p><div id="thefifth">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            </div>
+            <div id="thefifthmid">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            </div>
+            <div id="thefifth2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            </div>
+        </div>
+        <div id="item6">
+            <p class="letter">6</p><div id="thesixth">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            </div>
+            <div id="thesixth2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            </div>
+            <div id="thesixth3">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+                <img src="hearts.png" alt="Hearts logo." class="Ace2">
+            </div>
+        </div>
 
 
-    </div>
+        </section>
 </body>
 
 </html>
